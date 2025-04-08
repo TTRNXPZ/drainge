@@ -14,7 +14,7 @@ class WaterLevelSensor:
         elif voltage > V_MAX:
             water_level = MAX_WATER_LEVEL  
         else:
-            water_level = ((voltage - V_MIN) / (V_MAX - V_MIN)) * MAX_WATER_LEVEL * 0.9  
+            water_level = ((voltage - V_MIN) / (V_MAX - V_MIN)) * MAX_WATER_LEVEL * 1.67  
 
         water_level += WATER_LEVEL_OFFSET
         # print(f"Calculated Water Level: {water_level:.2f}")  
