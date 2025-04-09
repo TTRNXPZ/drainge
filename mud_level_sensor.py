@@ -10,11 +10,11 @@ class MudLevelSensor:
         turbidity1, turbidity2, turbidity3 = turbidity_values
 
         if (turbidity1 <= 200) and (turbidity2 > 200) and (turbidity3 > 200):
-            mud_level = "0.25"
+            mud_level = "0.15"
         elif (turbidity1 <= 200) and (turbidity2 <= 200) and (turbidity3 > 200):
-            mud_level = "0.50"
+            mud_level = "0.30"
         elif (turbidity1 <= 200) and (turbidity2 <= 200) and (turbidity3 <= 200):
-            mud_level = "0.75"
+            mud_level = "0.45"
         elif (turbidity1 > 200) and (turbidity2 > 200) and (turbidity3 > 200):
             mud_level = "0.00"
         else:
